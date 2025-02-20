@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(Satoshi-Bold.ttf);
+}
+
+h1 {
+    text-align: center;
+    margin: 200px;
+    color: white;
+    font-family: Satoshi;
+}
+
+img {
+    margin: -190px auto auto 650px;
+}
+
+body {
+    background-color:#181A1B;
+}

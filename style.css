@@ -11,7 +11,9 @@ h1 {
 }
 
 img {
-    margin: -190px auto auto 650px;
+    display: block;
+    margin: auto;
+    margin-top: -190px;
 }
 
 body {

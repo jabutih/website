@@ -10,6 +10,13 @@ h1 {
     font-family: Satoshi;
 }
 
+h2 {
+    text-align: center;
+    margin: 20px;
+    color: rgb(163, 0, 0);
+    font-family: Satoshi;
+}
+
 img {
     display: block;
     margin: auto;
@@ -18,4 +25,12 @@ img {
 
 body {
     background-color:#181A1B;
+    overflow: hidden;
+}
+
+.contador {
+    text-align: center;
+    color: rgb(102, 0, 0);
+    font-size: 200px;
+    margin-top: -70px;
 }

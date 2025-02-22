@@ -23,6 +23,15 @@ img {
     margin-top: -190px;
 }
 
+.teste {
+    text-align: left;
+    margin-left: 150px;
+    margin-top: -1000px;
+    font-family: Satoshi;
+    color: white;
+;
+}
+
 body {
     background-color:#181A1B;
     overflow: hidden;

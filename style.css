@@ -7,27 +7,26 @@ h1 {
     text-align: center;
     margin: 200px;
     color: white;
-    font-family: Satoshi;
+    font-family: Satoshi, serif;
 }
 
 h2 {
     text-align: center;
     margin: 20px;
     color: rgb(163, 0, 0);
-    font-family: Satoshi;
+    font-family: Satoshi, serif;
 }
 
 img {
     display: block;
-    margin: auto;
-    margin-top: -190px;
+    margin: -190px auto auto;
 }
 
 .teste {
     text-align: left;
     margin-left: 150px;
     margin-top: -1000px;
-    font-family: Satoshi;
+    font-family: Satoshi, serif;
     color: white;
 ;
 }

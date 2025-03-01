@@ -8,6 +8,7 @@ var typed = new Typed(".auto-type", {
         "秋山に<br>もみつ木の葉の<br>うつりなば<br>さらにや秋を<br>見まく欲りせむ<br><span class='author'>藤原定家</span>",
         "天の下<br>すでに覆ひて<br>ふる雪の<br>光を見れば<br>貴くもあるか<br><span class='author'>小野小町</span>"],
     typeSpeed: 50,
-    backSpeed: 50,
+    backSpeed: 30,
+    backDelay: 5000,
     loop: true
 })

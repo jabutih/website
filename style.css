@@ -9,57 +9,6 @@ h1 {
     font-family: Satoshi, serif;
 }
 
-h2 {
-    text-align: center;
-    margin: 20px;
-    color: rgb(163, 0, 0);
-    font-family: Satoshi, serif;
-}
-
-img {
-    display: block;
-    margin: -190px auto auto;
-}
-
-.teste {
-    text-align: left;
-    margin-left: 150px;
-    margin-top: -1000px;
-    font-family: Satoshi, serif;
-    color: white;
-}
-
-.links {
-    text-align: left;
-    margin-left: 50px;
-    color: white;
-    font-family: Satoshi, serif;
-    font-size: 20px;
-}
-
 body {
     background-color:#181A1B;
-}
-
-.contador {
-    text-align: center;
-    color: rgb(102, 0, 0);
-    font-size: 200px;
-    margin-top: -70px;
-}
-
-#recursos {
-    text-align: left;
-    margin-top: 800px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-}
-
-ul {
-    text-align: center;
-    margin: 200px;
-    color: white;
-    font-family: Satoshi, serif;
-    font-size: 34px;
-    font-weight: bold;
 }

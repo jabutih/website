@@ -1,6 +1,6 @@
 @font-face {
     font-family: Satoshi;
-    src: url(Satoshi-Bold.ttf);
+    src: url('Satoshi-Bold.ttf');
 }
 
 h1 {

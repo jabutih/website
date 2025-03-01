@@ -7,8 +7,30 @@ h1 {
     text-align: center;
     color: white;
     font-family: Satoshi, serif;
+    margin-top: 50px;
+}
+
+.japanese {
+    writing-mode: vertical-rl;
+    text-align: left;
+    color: white;
+    font-family: Satoshi, serif;
+    font-size: 50px;
+}
+
+.poema {
+    position: absolute;
+    inset: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
 }
 
 body {
     background-color:#181A1B;
+}
+
+.author {
+    background-color: white;
+    color: black;
 }

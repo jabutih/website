@@ -28,9 +28,26 @@ h1 {
 
 body {
     background-color:#181A1B;
+    background-image:url(background.webp);
 }
 
 .author {
     background-color: white;
     color: black;
+}
+
+.box {
+    height: 520px;
+    width: 450px;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.27);
+    border-left: 1px solid rgba(255, 255, 255, 0.27);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.04);
+
+    position: absolute;
+    inset: 0;
+    margin: auto;
 }

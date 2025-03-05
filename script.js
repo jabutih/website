@@ -1,6 +1,7 @@
 var typed = new Typed(".auto-type", {
     strings: [
         "いろはにほへと<br>ちりぬるを<br>わかよたれそ<br>つねならむ<br>うゐのおくやま<br> けふこえて<br>あさきゆめみし<br>ゑひもせす<br><span class='author'>弘法大師</span>",
+        "胸がある人じゃないと<br>面白くないんじゃない？<br>(笑う)<br><span class='author'>さっちゃん</span>",
         "この美しい短歌こそ日本人の心<br>敷島の<br>大和心を<br>人問わば<br>朝日ににおう<br>山桜花<br><span class='author'>山部赤人</span>",
         "体育館<br>虫が入ったら<br>殺します<br><span class='author'>さっちゃん</span>",
         "夏山の<br>木末の茂に<br>ほととぎす<br>鳴きとよむなる<br>声の遥けさ<br> <span class='author'>柿本人麻呂</span>",
@@ -11,5 +12,4 @@ var typed = new Typed(".auto-type", {
     backSpeed: 30,
     backDelay: 5000,
     loop: true,
-    shuffle: true
 })

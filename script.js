@@ -10,5 +10,6 @@ var typed = new Typed(".auto-type", {
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 5000,
-    loop: true
+    loop: true,
+    shuffle: true
 })

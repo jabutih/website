@@ -16,13 +16,26 @@ var typed = new Typed(".auto-type", {
         changeBackground(); },
 })
 
-function preloadImage(url)
-{
-    var img=new Image();
-    img.src=url;
+function preloadImages(urls, allImagesLoadedCallback){
+    var loadedCounter = 0;
+    var toBeLoadedNumber = urls.length;
+    urls.forEach(function(url){
+        preloadImage(url, function(){
+            loadedCounter++;
+            console.log('Number of loaded images: ' + loadedCounter);
+            if(loadedCounter == toBeLoadedNumber){
+                allImagesLoadedCallback();
+            }
+        });
+    });
+    function preloadImage(url, anImageLoadedCallback){
+        var img = new Image();
+        img.onload = anImageLoadedCallback;
+        img.src = url;
+    }
 }
 
-preloadImage(
+preloadImages([
     "/fundos/spring1.webp",
     "/fundos/sachika.png",
     "/fundos/spring2.webp",
@@ -31,7 +44,9 @@ preloadImage(
     "/fundos/autumn1.webp",
     "/fundos/autumn2.webp",
     "/fundos/winter1.webp"
-)
+], function(){
+    console.log('すべての画像がロードされました');
+});
 
 var backgroundImages = [
     "/fundos/spring1.webp",

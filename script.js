@@ -12,4 +12,34 @@ var typed = new Typed(".auto-type", {
     backSpeed: 30,
     backDelay: 5000,
     loop: true,
+    preStringTyped: function() {
+        changeBackground(); },
 })
+
+var backgroundImages = [
+    "/fundos/spring1.webp",
+    "/fundos/sachika.png",
+    "/fundos/spring2.webp",
+    "/fundos/summer1.webp",
+    "/fundos/summer2.webp",
+    "/fundos/autumn1.webp",
+    "/fundos/autumn2.webp",
+    "/fundos/winter1.webp"];
+var currentBackgroundIndex = -1;
+if (currentBackgroundIndex === 6) {
+    currentBackgroundIndex = -1;
+}
+
+function changeBackground() {
+    var nextBackgroundIndex = (currentBackgroundIndex + 1) % backgroundImages.length;
+
+    document.body.style.setProperty('--bg-next', `url(${backgroundImages[nextBackgroundIndex]})`);
+
+    document.body.classList.add('fade-in');
+
+    setTimeout(() => {
+        document.body.style.setProperty('--bg-current', `url(${backgroundImages[nextBackgroundIndex]})`);
+        document.body.classList.remove('fade-in');
+        currentBackgroundIndex = nextBackgroundIndex;
+    }, 1000);
+}

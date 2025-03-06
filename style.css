@@ -28,7 +28,35 @@ h1 {
 
 body {
     background-color:#181A1B;
-    background-image:url(background.webp);
+    overflow: hidden;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+body::before {
+    background-image: var(--bg-current, url('/fundos/spring1.webp'));
+}
+
+body::after {
+    background-image: var(--bg-next);
+    opacity: 0;
+}
+
+body.fade-in::after {
+    opacity: 1;
 }
 
 .author {

@@ -16,6 +16,23 @@ var typed = new Typed(".auto-type", {
         changeBackground(); },
 })
 
+function preloadImage(url)
+{
+    var img=new Image();
+    img.src=url;
+}
+
+preloadImage(
+    "/fundos/spring1.webp",
+    "/fundos/sachika.png",
+    "/fundos/spring2.webp",
+    "/fundos/summer1.webp",
+    "/fundos/summer2.webp",
+    "/fundos/autumn1.webp",
+    "/fundos/autumn2.webp",
+    "/fundos/winter1.webp"
+)
+
 var backgroundImages = [
     "/fundos/spring1.webp",
     "/fundos/sachika.png",

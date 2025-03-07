@@ -15,11 +15,11 @@ var typed = new Typed(".auto-type", {
 //         "天の海に<br>雲の波立ち<br>月の船<br>星の林に<br>漕ぎ隠る見ゆ<br><span class='author'>在原業平</span>",
 //         "秋山に<br>もみつ木の葉の<br>うつりなば<br>さらにや秋を<br>見まく欲りせむ<br><span class='author'>藤原定家</span>",
 //        "天の下<br>すでに覆ひて<br>ふる雪の<br>光を見れば<br>貴くもあるか<br><span class='author'>小野小町</span>"],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 10000,
-    startDelay: 3000,
-    loop: false,
+    typeSpeed: 100, // 40
+    backSpeed: 50, // 30
+    backDelay: 10000, // 5000
+    startDelay: 3000, // 2000
+    loop: false, // true
 //    preStringTyped: function() {
 //        changeBackground(); },
 })

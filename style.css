@@ -11,7 +11,7 @@ h1 {
 }
 
 .japanese {
-    writing-mode: vertical-rl;
+    /* writing-mode: vertical-rl; */
     text-align: left;
     color: white;
     font-family: Satoshi, serif;
@@ -24,6 +24,8 @@ h1 {
     width: fit-content;
     height: fit-content;
     margin: auto;
+    max-width: 1000px; /* Defina a altura máxima */
+    overflow: hidden;  /* O texto será cortado se ultrapassar o limite */
 }
 
 body {
@@ -47,7 +49,7 @@ body::after {
 }
 
 body::before {
-    background-image: var(--bg-current, url('/fundos/spring1.webp'));
+    background-image: var(--bg-current, url('/fundos/spring2.webp'));
 }
 
 body::after {
@@ -66,8 +68,8 @@ body.fade-in::after {
 
 .box {
     height: 520px;
-    width: 450px;
-    padding: 30px 50px;
+    width: 1000px; /* 450px */
+    padding: 90px 50px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(8px);

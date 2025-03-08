@@ -1,3 +1,39 @@
+const blockBackground = document.querySelector('.block-background');
+
+setTimeout(() => {
+    blockBackground.classList.add('invisible');
+}, 2000);
+
+let intro = document.querySelector('.intro');
+let logo = document.querySelector('.logo-header');
+let logoSpan = document.querySelectorAll('.logo');
+
+window.addEventListener('DOMContentLoaded', ()=> {
+
+    setTimeout(()=>{
+
+        logoSpan.forEach((span, idx)=>{
+            setTimeout(()=>{
+                span.classList.add('active')
+            }, (idx + 1) * 40);
+        })
+
+        setTimeout(()=>{
+            logoSpan.forEach((span, idx)=>{
+                setTimeout(()=>{
+                    span.classList.remove('active');
+                    span.classList.add('fade');
+                }, (idx + 1) * 10)
+            })
+        },9700);
+        setTimeout(()=>{
+            intro.style.top = '-100vh';
+        },10000)
+
+
+    })
+})
+
 var typed = new Typed(".auto-type", {
     strings: [
         "いろはにほへと<br>ちりぬるを<br>わかよたれそ<br>つねならむ<br>うゐのおくやま<br> けふこえて<br>あさきゆめみし<br>ゑひもせす<br><span class='author'>弘法大師</span>",

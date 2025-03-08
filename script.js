@@ -2,7 +2,7 @@ const blockBackground = document.querySelector('.block-background');
 
 setTimeout(() => {
     blockBackground.classList.add('invisible');
-}, 2000);
+}, 5000);
 
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
@@ -12,11 +12,19 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
     setTimeout(()=>{
 
+        setTimeout(() => {
+            intro.classList.add('fade-out');
+        }, 9700);
+
         logoSpan.forEach((span, idx)=>{
             setTimeout(()=>{
                 span.classList.add('active')
             }, (idx + 1) * 40);
         })
+
+        setTimeout(()=>{
+            logo.classList.add('active')
+        },1000)
 
         setTimeout(()=>{
             logoSpan.forEach((span, idx)=>{
@@ -25,10 +33,8 @@ window.addEventListener('DOMContentLoaded', ()=> {
                     span.classList.add('fade');
                 }, (idx + 1) * 10)
             })
+
         },9700);
-        setTimeout(()=>{
-            intro.style.top = '-100vh';
-        },10000)
 
 
     })
@@ -47,13 +53,13 @@ var typed = new Typed(".auto-type", {
     typeSpeed: 40,
     backSpeed: 30,
     backDelay: 5000,
-    startDelay: 2000,
+    startDelay: 15000,
     loop: true,
     preStringTyped: function() {
         changeBackground(); },
 })
 
-function preloadImages(urls, allImagesLoadedCallback){
+/* function preloadImages(urls, allImagesLoadedCallback){
     var loadedCounter = 0;
     var toBeLoadedNumber = urls.length;
     urls.forEach(function(url){
@@ -71,8 +77,7 @@ function preloadImages(urls, allImagesLoadedCallback){
         img.src = url;
     }
 }
-
-preloadImages([
+ preloadImages([
     "/fundos/spring2.webp",
     "/fundos/sachika.png",
     "/fundos/spring1.webp",
@@ -83,7 +88,7 @@ preloadImages([
     "/fundos/winter1.webp"
 ], function(){
     console.log('すべての画像がロードされました');
-});
+}); */
 
 var backgroundImages = [
     "/fundos/spring2.webp",

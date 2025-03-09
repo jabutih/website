@@ -77,7 +77,8 @@ function preloadImages(urls, allImagesLoadedCallback){
         img.src = url;
     }
 }
- preloadImages([
+
+preloadImages([
     "/fundos/spring2.webp",
     "/fundos/sachika.png",
     "/fundos/spring1.webp",

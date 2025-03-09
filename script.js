@@ -88,7 +88,7 @@ preloadImages([
     "/fundos/autumn2.webp",
     "/fundos/winter1.webp"
 ], function(){
-    console.log('すべての画像がロードされました');
+    console.log('すべての画像がロードされました！');
 });
 
 var backgroundImages = [

@@ -59,7 +59,7 @@ var typed = new Typed(".auto-type", {
         changeBackground(); },
 })
 
-/* function preloadImages(urls, allImagesLoadedCallback){
+function preloadImages(urls, allImagesLoadedCallback){
     var loadedCounter = 0;
     var toBeLoadedNumber = urls.length;
     urls.forEach(function(url){
@@ -88,7 +88,7 @@ var typed = new Typed(".auto-type", {
     "/fundos/winter1.webp"
 ], function(){
     console.log('すべての画像がロードされました');
-}); */
+});
 
 var backgroundImages = [
     "/fundos/spring2.webp",

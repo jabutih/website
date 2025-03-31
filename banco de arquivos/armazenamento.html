@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armazenamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="caixa">
-    <span class="itens">
-        <img class="arquivos" src="/fundos/diretório.svg" alt="diretório">
-    </span>
-
+    <div id="conteiner">
+        <div class="itens">
+            <img class="arquivos" src="/fundos/livros.svg" alt="diretório">
+            <h2 class="texto">Livro C#</h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto"></h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto">  </h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto">  </h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto">  </h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto">  </h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto">  </h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto">  </h2>
+        </div>
+        <hr>
+        <div class="itens">
+            <h2 class="texto">  </h2>
+        </div>
+    </div>
 </div>
-
-
 
 </body>
 </html>
@@ -35,21 +70,38 @@
         position: absolute;
         inset: 0;
         margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #conteiner {
+        width: 100%;
     }
     .itens {
-        height: 40px;
-        width: 40px;
-        padding: 35px 30px;
-        border-radius: 50px;
+        height: auto;
+        width: auto;
+        padding: 20px 20px;
+        border-radius: 30px;
         background-color: rgba(0, 0, 0, 0.02);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.27);
-        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.04);
-        position: absolute;
-        margin: auto;
+        margin-bottom: 3em;
     }
     .arquivos {
-        width: fit-content;
-        height: fit-content;
+        width: 55px;
+        height: auto;
+        float: left;
+    }
+    .texto {
+        color: white;
+        font-family: Segoe UI,serif;
+        font-size: 18px;
+        width: auto;
+        float: left;
+        margin-left: 10px;
+    }
+    hr {
+        width: 45em;
+        color: #656565;
+        border-style: solid;
+        margin: auto;
     }
 </style>

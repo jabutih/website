@@ -1,3 +1,11 @@
+let senhaUsuario;
+
+fetch('a_passwords.json')
+    .then(response => response.json())
+    .then(data => {
+        senhaUsuario = data.senhas[0].senhaAdmin;
+    })
+
 let itens = document.querySelector('.itens');
 let elemento = document.querySelector('.elemento');
 
@@ -15,8 +23,6 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         textoSenhaUm.classList.add('fadeout');
     },2000);
-    setTimeout(() => {
-    });
 });
 
 let senha = document.querySelector('.senha');
@@ -27,11 +33,14 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         senha.classList.add('fadein');
     },4000)
+    setTimeout(() => {
+        senha.classList.add('active');
+    }, 8000);
 })
 
 senha.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-        if (input.value === 'jabuti') {
+        if (input.value === senhaUsuario) {
             senha.classList.add('inactive');
             senhaUm.classList.add('inactive');
         }

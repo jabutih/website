@@ -26,7 +26,7 @@ const input = document.querySelector('#inputSenha');
 window.addEventListener('load', () => {
     setTimeout(() => {
         senha.classList.add('fadein');
-    },5000)
+    },4000)
 })
 
 senha.addEventListener('keypress', function (e) {

@@ -176,7 +176,15 @@ hr {
 }
 
 #inputSenha {
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px;
     outline: 0;
+    background-color: #1c2020;
+    caret-color: #bfbfbf;
+    color: #bfbfbf;
+    padding: 10px 10px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.17);
 }
